@@ -1,0 +1,63 @@
+/* Resetting margin, padding, and box-sizing for all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure that all images are inline-block and avoid unwanted spacing */
+img {
+  display: block;
+  max-width: 100%; /* Make sure images scale properly */
+  height: auto; /* Prevent images from stretching */
+}
+
+/* Set up consistent line-height for better spacing */
+body {
+  line-height: 1.5;
+  font-family: sans-serif; /* Or choose your preferred font */
+  background-color: #fff; /* Optional: Set background color */
+  color: #333; /* Optional: Set default text color */
+}
+
+/* Remove default link styling */
+a {
+  text-decoration: none;
+  color: inherit; /* Make sure links inherit text color */
+}
+
+/* Set up a basic font-size on the root element */
+html {
+  font-size: 16px; /* Default font size */
+}
+
+/* Ensure no focus outline for input elements, only on keyboard navigation */
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Basic button styling */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+/* Ensure all list items don't have default styling */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Make sure all divs and sections behave like block elements */
+div,
+section,
+article,
+aside {
+  display: block;
+}
